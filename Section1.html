@@ -4,13 +4,20 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class="pagination">
-    <a href="#">&laquo;</a>
-    <a href="./index.html">Intro</a>
-    <a class="active" href="./Section1.html">Section 1</a>
-    <a href="#">&raquo;</a>
+  <div>
+  <ul>
+    <li><a class="active" href="./index.html">Introduction into Cryptology</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" href='./Section1.html'>Pre-Digitial Ciphers</a>
+    <div class="dropdown-content">
+      <a href="#">The Caesar Cipher</a>
+      <a href="#">The Monoalphabetic Substitution Cipher</a>
+      <a href="#">The Polyalphabetic Substitution Cipher</a>
+      <a href="#">The Homophonic Substitution Cipher</a>
+    </div>
+  </li>
+  </ul>
   </div>
-
 
 <html>
 <div class="Section1">
@@ -57,7 +64,7 @@ After the discovery of the tool of frequency analysis to crack the monoalphabeti
 Use a codeword to pick the order of the Caesar Ciphers. Under this word, Hello would be translated to, hence the double l could no longer be analysed.
 Challenge
 
-<h3>Homophonic substitution cipher</h3>
+<h3>The Homophonic Substitution Cipher</h3>
 Same sound. Military operations needed quick and reliable ciphers. This was much easier to implement than a polyalphabetic one. The man in the iron mask
 
 Describe and example
