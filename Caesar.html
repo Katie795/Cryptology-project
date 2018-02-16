@@ -2,30 +2,21 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name='viewport' content='width=device-width, initial-scale=0.1'>
+  <link href='css/bootstrap.css' rel='stylesheet'>
 </head>
 <body>
 
-  <nav class="navbar navbar-default">
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="./index.html">Introduction to Cryptology <span class="sr-only">(current)</span></a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown">Pre-Digitial Ciphers
-              <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="./Caesar.html">The Caesar Cipher</a></li>
-              <li><a href="./Monoalph.html">The Monoalphabetic Substitution Cipher</a></li>
-              <li><a href="./Viginere.html">The Polyalphabetic Substitution Cipher</a></li>
-              <li><a href="./Homophon.html">The Homophonic Substitution Cipher</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+  <div class="container">
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:1%">
+      0%
     </div>
-  </nav>
+  </div>
+</div>
 
 <html>
-<div class="Caesar">
+<div class='container'>
 
   <h3>The Caesar cipher (Difficulty rating?)</h3>
   <p>This is one of the earliest known examples of ciphers in written history,
@@ -107,7 +98,15 @@ so they are good words to look out for.</p>
 
 <div>Answer: I will wait for you at the bridge</div>
 
-possibly another one
+possibly another ones
+
+<nav aria-label="Page navigation">
+  <ul class="pager">
+    <li class="previous"><a href="./index.html"><span aria-hidden="true">&larr;</span> Previous</a></li>
+    <li class="next"><a href="./Monoalph.html"> Next<span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
 
 </div>
 </body>
+</html>
