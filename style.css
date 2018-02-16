@@ -9,6 +9,12 @@ body {
   background-color: rgb(250, 240, 170);
 }
 
+.bg-2 {
+  background-color: #474e5d;
+  color: #ffffff;
+}
+
+
 ul {
     list-style-type: none;
     margin: 0;
