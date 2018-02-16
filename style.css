@@ -110,8 +110,8 @@ li.dropdown {
         display: block;
     }
 
-    .heading {
-      background-image: url('.Images/Ciphers.png');
+    .jumbotron {
+      background-image: url('./Image/Ciphers');
       background-size: cover;
       background-attachment: fixed;
       min-height: 600px;
