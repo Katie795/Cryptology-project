@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <meta name='viewport' content='width=device-width, initial-scale=0.1'>
+  <link href='css/bootstrap.css' rel='stylesheet'>
 </head>
 <body>
-  <div>
-  <ul>
-    <li><a class="active" href="./index.html">Introduction into Cryptology</a></li>
-    <div class="dropdown">
-      <li><a href='./Section1.html'class="dropbtn">Pre-Digitial Ciphers</a></li>
-      <li><div class="dropdown-content">
-        <a href="">The Caesar Cipher</a>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+  <ul class="nav navbar-nav">
+    <li class="active" ><a href="./index.html">Introduction into Cryptology</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href='./Section1.html'>Pre-Digitial Ciphers<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <a href="#">The Caesar Cipher</a>
         <a href="#">The Monoalphabetic Substitution Cipher</a>
         <a href="#">The Polyalphabetic Substitution Cipher</a>
         <a href="#">The Homophonic Substitution Cipher</a>
-    </div>
   </li>
   </ul>
 </div>
+</div>
+</nav>
 
 <html>
-<div class="Intro">
+<div class="container">
   <h2>Cryptology through the ages</h2>
   <p>A brief description of a few types of encryption employed throughout history.
 
