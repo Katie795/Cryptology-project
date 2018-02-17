@@ -92,34 +92,29 @@ For instance, you could shift the alphabet 7 terms to the right, check out this 
 It is even easier if you can narrow it down beforehand, for instance the only single letter words in English are a, and I,
 so they are good words to look out for.</p>
 
-  <p>Let's see if you can solve this one!</p>
+<p>Let's see if you can solve this one!</p>
 
 <p>V JVYY JNVG SBE LBH NG GUR OEVQTR</p>
 
-<form action="">
+<form name="AnswerC" onsubmit="return CheckC()">
   Answer:
-  <input type="text" value="ans">
+  <input name="MyAnswerC" type="text" nam>
+  <input type="submit" value="Submit">
 </form>
 
 <script>
-  checkcs Check() {
-    var text=ans
-    ans.innerhtml = text.toUpperCase();
-    text.trim()
-    if (text = IWILLWAITFORYOUATTHEBRIDGE) {
-
+  function CheckC() {
+    var x = document.forms["AnswerC"]["MyAnswerC"].value;
+    if (x == IWILLWAITFORYOUATTHEBRIDGE) {
+      alert("Well done! You cracked the code!");
     }
     else {
-
+      alert("Oops! Try again");
     }
-
   }
-
 </script>
 
-<div>Answer: I will wait for you at the bridge</div>
-
-possibly another ones
+<!--I'd like to come back to this code to make it work for all permutations of uppercase, lowercase and spaces-->
 
 <nav aria-label="Page navigation">
   <ul class="pager">
