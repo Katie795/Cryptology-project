@@ -790,7 +790,12 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
  </div>
 
 <p>It already looks a lot more difficult! The way to use it is to pick a codeword, for example, let us pick the
-  word BLUE. Lets say we wanted to send the message: Good morning. This would be sent as follows:
+  word BLUE. Lets say we wanted to send the message: Good morning. To use the table, we would go down the sides
+  of the columns to the first letter of the codeword. In this case it is B, so we would go to the row immediately
+  below us. Along the top row we would then go along to the letter we wanted to encode, in this case it is the letter
+  g. The intersection of these rows and columns would be the resulting letter we would be enciphered to, so g is
+  changed to h. For the next letter we would take the next letter of the codeword, L, and use that row to encrypt o,
+  and we would carry on like that. So the message would be sent like this:</p>
 
   <div>
     <table>
@@ -836,9 +841,18 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
     </table>
   <div>
 
-Use a codeword to pick the order of the Caesar Ciphers. Under this word, Hello would be translated to,
-hence the double l could no longer be analysed.
-Challenge
+<p>Do you see how this comes about? Notice that although there is a double o in 'good', each o is enciphered to a
+different letter! And also notice that the letter H appears twice in the ciphertext, but it represents both a
+g and a d! This is the brilliance of the Viginere cipher. No wonder it was called the Chiffre Indechiffrable!</p>
+
+<p>However, like most ciphers, there is always a flaw ready to be exploited. If the cipher text is long enough, there
+  are a few patterns to observe that make the Viginere cipher vulnerable to attack.</p>
+
+<p>The key to cracking this most fiendish of ciphers is to figure out how long the key is. If this can be done, then
+  we can just come back to our friend 'Frequency analysis', and the rest of the code should be in the bag!</p>
+
+<p>To figure out how long the codeword is, we need to look for patterns</p>
+
 
 <nav aria-label="Page navigation">
   <ul class="pager">
