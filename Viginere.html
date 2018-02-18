@@ -841,7 +841,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
     </table>
   <div>
 
-<p>Do you see how this comes about? Notice that although there is a double o in 'good', each o is enciphered to a
+<div><p>Do you see how this comes about? Notice that although there is a double o in 'good', each o is enciphered to a
 different letter! And also notice that the letter H appears twice in the ciphertext, but it represents both a
 g and a d! This is the brilliance of the Viginere cipher. No wonder it was called the Chiffre Indechiffrable!</p>
 
@@ -850,10 +850,100 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
 
 <p>The key to cracking this most fiendish of ciphers is to figure out how long the key is. If this can be done, then
   we can just come back to our friend 'Frequency analysis', and the rest of the code should be in the bag!</p>
+</div>
 
-<p>To figure out how long the codeword is, we need to look for patterns</p>
+<p>To figure out how long the codeword is, we need to look for patterns. Check out this example, with the codeword LUCKY:</p>
 
+<div>
+  <table>
+    <tr>
+      <td>L</td>
+      <td>U</td>
+      <td>C</td>
+      <td>K</td>
+      <td>Y</td>
+      <td>L</td>
+      <td>U</td>
+      <td>C</td>
+      <td>K</td>
+      <td>Y</td>
+      <td>L</td>
+      <td>U</td>
+      <td>C</td>
+      <td>K</td>
+      <td>Y</td>
+      <td>L</td>
+      <td>U</td>
+      <td>C</td>
+      <td>K</td>
+      <td>Y</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>t</td>
+      <td>h</td>
+      <td>e</td>
+      <td>s</td>
+      <td>e</td>
+      <td>a</td>
+      <td>t</td>
+      <td>h</td>
+      <td>e</td>
+      <td>s</td>
+      <td>u</td>
+      <td>n</td>
+      <td>a</td>
+      <td>n</td>
+      <td>d</td>
+      <td>t</td>
+      <td>h</td>
+      <td>e</td>
+      <td>s</td>
+      <td>k</td>
+      <td>y</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>B</td>
+      <td>G</td>
+      <td>C</td>
+      <td>D</td>
+      <td>L</td>
+      <td>N</td>
+      <td>J</td>
+      <td>O</td>
+      <td>R</td>
+      <td>F</td>
+      <td>H</td>
+      <td>C</td>
+      <td>X</td>
+      <td>B</td>
+      <td>E</td>
+      <td>B</td>
+      <td>G</td>
+      <td>C</td>
+      <td>I</td>
+      <td>J</td>
+    </tr>
+  </table>
+<div>
 
+<p> Did you see how EBGC is repeated twice? This is becuase it overlaps the same part of the codeword! As a general
+  rule, any repetition for more that 4 letters in a row is more likely to be an overlap of a common word than a
+  coincidence! Using this very small piece of information, we can have a guess at how long the codeword is! Counting how far apart these two repetitons
+  are, we can see they are 15 spaces apart. So it would be reasonable to assume that the codeword is 3, 5 or 15 letters long.( Of course
+  it could be 1 letter long, but this is just a Caesar cipher and that is not very secure at all!). If the plaintext was longeer,
+  we could look for more of these repetitions, and look for common multiples between the distances between the two. For instance,
+  if the we had another sequence which was 50 letters apart, then this could have a key length of 2, 5, 10, 25 or 50. This would
+  make 5 a very likely candidate!</p>
+<p> Now what? Once we have a suspicion on how long the codeword is, we can split up the ciphertext. The first section would
+  correspond to the first letter of the key, the second, to the second, and so on. What we would do now is perform Frequency
+  analysis on each of these groups of letters separately. Very heplfully, if we are right about the length of the
+    key, the first group simply corresponds to a Caesar Cipher! So if we can build up a picture of the distribution of the
+    letters, we can figure out the Caesar cipher it corresponds to, and figure out the letter of the codeword. If we can
+    do that for each letter of the codeword, or if we can guess the codeword or the message from what we have managed
+    to figure out already, then we have solved the Viginere Cipher!
+<p>
 <nav aria-label="Page navigation">
   <ul class="pager">
     <li class="previous"><a href="./Monoalph.html"><span aria-hidden="true">&larr;</span> Previous</a></li>
