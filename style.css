@@ -9,23 +9,36 @@ body {
   background-color: rgb(250, 240, 170);
 }
 
-.bg-2 {
-  background-color: #474e5d;
-  color: #ffffff;
+.container-fluid {
+    padding: 40px 50px;
 }
 
-.bg-1 {
-  background-image: url('./Images/Ciphers2.jpg');
+
+#Intro {
+  background-image: url('./Images/Binary5.jpg');
   background-size: cover;
   background-attachment: fixed;
-  min-height: 600px;
+  min-height: 550px;
 }
 
-.bg-1 a {
-  color: #ffffff;
+#Intro h2 {
+  color: white;
 }
 
->>>>>>> Amy's-Branch
+
+#AboutUs {
+  background-color: #ffffff;
+  color: black;
+}
+
+#Thanks {
+  background-color: lightblue;
+}
+
+
+#C {
+  background-color: lightblue;
+}
 
     ul {
         list-style-type: none;

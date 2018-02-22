@@ -4,41 +4,46 @@
   <link href="./style.css" type="text/css" rel="stylesheet">
   <meta name='viewport' content='width=device-width, initial-scale=0.1'>
   <link href='./css/bootstrap.css' rel='stylesheet'>
+  <script src='./jquery-3.3.1.min.js'></scirpt>
 </head>
 
 <body>
-  <div class='jumbotron container-fluid text-center lead bg-1'>
-     <div class='row'>
-   <br><h1>Cryptology</h1></br>
+  <div id='Intro' class='jumbotron'>
+    <div class='container-fluid text-center'>
+      <br><br><br><h2>Are you ready to explore the art of secret writing?</h2>
+      <h2>Are you smart enough to crack the code?</h2>
+      <h2>Discover how to make and break some of the worlds most popular, and fiendish ciphers!</h2><br><br>
+            <form method="get" action="./Caesar.html">
+       <button class='btn btn-info btn-lg' type="submit">Ready to get started?</button><br><br>
+     </form>
  </div>
-   <p>Are you ready to explore the art of secret writing?</p>
-   <p>Are you smart enough to crack the code?</p>
-   <p>Click below to discover how to make and break some of the worlds most popular, and fiendish ciphers!</p>
-       <form method="get" action="./Caesar.html">
-    <button class='btn btn-info btn-lg' type="submit">Ready to get started?</button>
- </form>
- </div>
- </div>
+</div>
 
- <div class='container-fluid bg-2 text-center'>
- <h2 class='margin wsite-content-title'>About us</h2>
- <br><div class='col-sm-6'></br>
- <img class='img-circle' src='./Images/person.jpg'>
+ <div id='AboutUs' class='text-center'>
+   <div class='container-fluid'>
+ <h2 class='margin wsite-content-title'>About us</h2><br><br>
+ <div class='row'>
+ <div class='col-sm-6'>
+ <img class='img-circle' src='./Images/Katie.png'>
  <blockquote>
- <p>Hiya I'm Katie! I am in my 3 year at the University of Glasgow studying maths.</p>
+ <p>Hiya I'm Katie! I am in my 3rd year at the University of Glasgow studying maths.</p>
  </blockquote>
  </div>
- <br><div class='col-sm-6'></br>
- <img class='img-circle' src='./Images/person.jpg'>
+ <div class='col-sm-6'>
+ <img class='img-circle' src='./Images/Amy2.png'>
  <blockquote>
  <p>Hello, my name is Amy and I have been studying Economics with Maths at Glasgow University for a year. I love it!</p>
  </blockquote>
  </div>
+</div>
+</div>
+</div>
 
- <br><div class= 'container bg-3'>
-   <br><h2 class='margin'>Special Thanks and Sponsors</h2></br>
+<div id='Thanks' class= 'text-center'>
+   <div class='container-fluid'>
+   <h2 class='margin'>Special Thanks and Sponsors</h2><br><br>
 
-     <div class="row">
+     <div class="container row">
        <div class="col-sm-10 col-md-6">
          <div class="thumbnail">
            <img src="./Images/Code First Girls.png" alt="CFG">
@@ -53,12 +58,8 @@
          </div>
        </div>
      </div>
-
 </div>
- </div>
- </div>
-    </div>
-  </div>
-</body>
+</div>
 
+</body>
 </html>
