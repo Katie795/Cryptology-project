@@ -9,22 +9,33 @@ body {
   background-color: rgb(250, 240, 170);
 }
 
-.bg-2 {
-  background-color: #474e5d;
-  color: #ffffff;
+.container-fluid {
+    padding: 40px 50px;
 }
 
-.bg-1 {
-  background-image: url('./Images/Ciphers2.jpg');
+
+#Intro {
+  background-image: url('./Images/Binary5.jpg');
   background-size: cover;
   background-attachment: fixed;
-  min-height: 600px;
+  min-height: 550px;
 }
 
-.bg-1 a {
-  color: #ffffff;
+#Intro h2 {
+  color: white;
 }
 
+
+#AboutUs {
+  background-color: #ffffff;
+  color: black;
+}
+
+#Thanks {
+  background-color: lightblue;
+}
+
+<<<<<<< HEAD
 .dropdown-content {
     display: none;
     position: absolute;
@@ -32,6 +43,11 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+=======
+
+#C {
+  background-color: lightblue;
+>>>>>>> Amy's-Branch
 }
 
     ul {
