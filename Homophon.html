@@ -24,8 +24,6 @@ The Homophonic cipher was invented to essentially cover up the flaw exposed by f
   normally. For example, since the letter e occurs 12% of the time, it would be represented by 12 separate symbols, wheras
   the letter z would only be represented by 1 symbol.</p></div>
 <div><p> An example of such key is shown below:<p></div>
-<img src="./Images/HomophonTable.jpg">
-
 
 <div class='container'>
 
@@ -369,7 +367,15 @@ The Homophonic cipher was invented to essentially cover up the flaw exposed by f
 
   </table>
 </div>
-
+<div>
+  <p>The question still remains: How would you go about solving such a cipher? It is definitely a lot harder to crack than
+  the Monoalphabetic one, and the process seems daunting. However, though there are a few flaws in this cipher which, when
+  used cleverly and with a bit of luck, means that it can be cracked!</p>
+  <p>The trick here is to realise that though each letter can be represented by multiple numbers, each number corresponds to only
+  one letter! Yay! So where can we go with this handhold?</p>
+  <p>Now we can look for pairs on letters that appear frequently. From this we can guess what these numbers represent, and use our guesses
+    to slowly build up a picture of the ciphertext. To get you started, the most common 2 and 3 letter combinations in English are
+    "th", "in", "he", "er" and "the", "ing" and "and".</p>
 <form>
   Answer:
   <input type="submit" value="Submit">
