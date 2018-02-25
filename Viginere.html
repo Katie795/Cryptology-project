@@ -29,68 +29,64 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
 , a new type of code had to be invented. The idea was to use not just one, but several Caesar ciphers all
  at once, so frequency analysis is rendered useless. Check out this diagram:</p>
 
- <div class="container">
+ <div class="container col-sm-8">
    <table class="table table-sm table-bordered table-condensed">
-     <thead class='blue-grey lighten-4'>
+       <tr class='blue-grey lighten-4'>
+         <th>A</th>
+         <th>B</th>
+         <th>C</th>
+         <th>D</th>
+         <th>E</th>
+         <th>F</th>
+         <th>G</th>
+         <th>H</th>
+         <th>I</th>
+         <th>J</th>
+         <th>K</th>
+         <th>L</th>
+         <th>M</th>
+         <th>N</th>
+         <th>O</th>
+         <th>P</th>
+         <th>Q</th>
+         <th>R</th>
+         <th>S</th>
+         <th>T</th>
+         <th>U</th>
+         <th>V</th>
+         <th>W</th>
+         <th>X</th>
+         <th>Y</th>
+         <th>Z</th>
+       </tr>
        <tr>
-       <th>A</th>
-       <th>B</th>
-       <th>C</th>
-       <th>D</th>
-       <th>E</th>
-       <th>F</th>
-       <th>G</th>
-       <th>H</th>
-       <th>I</th>
-       <th>J</th>
-       <th>K</th>
-       <th>L</th>
-       <th>M</th>
-       <th>N</th>
-       <th>O</th>
-       <th>P</th>
-       <th>Q</th>
-       <th>R</th>
-       <th>S</th>
-       <th>T</th>
-       <th>U</th>
-       <th>V</th>
-       <th>W</th>
-       <th>X</th>
-       <th>Y</th>
-       <th>Z</th>
-     </tr>
-     </thead>
-
-     <tbody>
-       <tr>
-       <td>B</td>
-       <td>C</td>
-       <td>D</td>
-       <td>E</td>
-       <td>F</td>
-       <td>G</td>
-       <td>H</td>
-       <td>I</td>
-       <td>J</td>
-       <td>K</td>
-       <td>L</td>
-       <td>M</td>
-       <td>N</td>
-       <td>O</td>
-       <td>P</td>
-       <td>Q</td>
-       <td>R</td>
-       <td>S</td>
-       <td>T</td>
-       <td>U</td>
-       <td>V</td>
-       <td>W</td>
-       <td>X</td>
-       <td>Y</td>
-       <td>Z</td>
-       <td>A</td>
-     </tr>
+         <td>B</td>
+         <td>C</td>
+         <td>D</td>
+         <td>E</td>
+         <td>F</td>
+         <td>G</td>
+         <td>H</td>
+         <td>I</td>
+         <td>J</td>
+         <td>K</td>
+         <td>L</td>
+         <td>M</td>
+         <td>N</td>
+         <td>O</td>
+         <td>P</td>
+         <td>Q</td>
+         <td>R</td>
+         <td>S</td>
+         <td>T</td>
+         <td>U</td>
+         <td>V</td>
+         <td>W</td>
+         <td>X</td>
+         <td>Y</td>
+         <td>Z</td>
+         <td>A</td>
+       </tr>
        <tr>
        <td>C</td>
        <td>D</td>
@@ -791,7 +787,6 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>Y</td>
        <td>Z</td>
      </tr>
-   </tbody>
    </table>
  </div>
 
@@ -803,7 +798,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
   changed to h. For the next letter we would take the next letter of the codeword, L, and use that row to encrypt o,
   and we would carry on like that. So the message would be sent like this:</p>
 
-  <div>
+  <div class='col-sm-6'>
     <table class='table table-bordered table-condensed'>
       <tr>
         <td>B</td>
@@ -845,7 +840,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
         <td>A</td>
       </tr>
     </table>
-  <div>
+  </div>
 
 <div><p>Do you see how this comes about? Notice that although there is a double o in 'good', each o is enciphered to a
 different letter! And also notice that the letter H appears twice in the ciphertext, but it represents both a
@@ -860,7 +855,7 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
 
 <p>To figure out how long the codeword is, we need to look for patterns. Check out this example, with the codeword LUCKY:</p>
 
-<div>
+<div class='col-sm-6'>
   <table class="table table-bordered table-condensed">
     <tr>
       <td>L</td>
@@ -932,7 +927,7 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
       <td>J</td>
     </tr>
   </table>
-<div>
+</div>
 
 <p> Did you see how EBGC is repeated twice? This is becuase it overlaps the same part of the codeword! As a general
   rule, any repetition for more that 4 letters in a row is more likely to be an overlap of a common word than a
@@ -956,11 +951,9 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
   <p>Now for the last one... The hardest one. Are you up for the challenge?<br>If you manage to solve this one, as well
   as all the other ones, let us know, and we'll give you some recognition on our soon to be up and running interactive part of
   the website!<br> Good luck...</br>
-  SJVVVTOLKCIRGYNVEKFXJVWNTXNVHBXJGIIGUIDIXPWIPYSEVMPPEASRFRRWULCZRBFKCJSNDEPUCHMPGRVGLLCKPHNIFFILFXOVEGDICEMGY
-  EPUGHETCECWGIUEXFWEPJIVMVKKCTFHAFYEWETEXASXMZWLWWCIIGLGQEXKSGVJEGYTTVWXFXURVXFXRISFAWGJEGYCQLFXYMPKSTUGGGXRGYT
-  UIYWEVJABLLAFYKZICUYISRFPSNJIAVWHHIPNMMZXJVKKSGGFJTFEFLPMFSVKLXYVKVJHXEEYMEVEHKIKSAJZPXRGYNVEKFXJEMWZGEWNFWJZ
-  RXTYTEWBXCQLKXLXQFQNULUFTESRVPSNJSYEKTJHGEEGYHGTSKSXGPSNJSYEWHMPKEWMWEFFJPSMVZRZXSTJSFWSPVXHTVKEKRGYHCSPWVURR
-  WQSWCITJRVYEMQSWIITDPATEGWRFLVXQSWWIITDPUSASZGNSKLLUFPBNIVFPXSVPRRWCRQNCHMVUVPYSRFZRWGMPXWHQSWNMEDPGRVGLSNZZX
+  SJVVVTOLKCIRGYNVEKFXJVWNTXNVHBXJGIIGUIDIXPWIPYSEVMPPEASRFRRWULCZRBFKCJSNDEPUCHMPGRVGLLCKPHNIFFILFXOVEGDICEMGYEPUGHETCECWGIUEXFWEPJIVMVKKCTFHAFYEWETEXASXMZWLWWCIIGLGQEXKSGVJEGYTTVWXFXURVXFXRISFAWGJEGYCQLFXYMPKSTUGGGXRGYTUIYWEVJABLLAFYKZICUYISRFPSNJIAVWHHIPNMMZXJVKKSGGFJTFEFLPMFSVKLXYVKVJHXEEYMEVEHKIKSAJZPXRGYNVEKFXJEMWZGEWNFWJZRXTYTEWBXCQL
+  KXLXQFQNULUFTESRVPSNJSYEKTJHGEEGYHGTSKSXGPSNJSYEWHMPKEWMWEFFJPSMVZRZXSTJSFWSPVXHTVKEKRGYHCSPWV
+  URRWQSWCITJRVYEMQSWIITDPATEGWRFLVXQSWWIITDPUSASZGNSKLLUFPBNIVFPRRWCRQNCHMVUVPYSRFZRWGMPXWHQSWNMEDPGRVGLSNZZX
   -NITFRBUECJLHXJUKEED.
   </p>
   <form>
