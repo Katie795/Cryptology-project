@@ -8,28 +8,411 @@
 </head>
 <body>
 
-  <div class="container">
-  <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-      75%
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">CFG</a>
+      </div> <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+        <ul class="nav navbar-nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Pigpen.html">The Pigpen Cipher</a></li>
+          <li><a href="./Caesar.html">The Caesar Cipher</a></li>
+          <li><a href="./Monoalph.html">The Monoalphabetic Cipher</a></li>
+          <li class="active"><a href="./Homophon.html">The Homophonic Cipher</a></li>
+          <li><a href="./Viginere.html">The Viginere Cipher</a></li>
+          <li><a href="./Completed.html">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
+  </nav>
 
 <div class="container">
-<h3>Homophonic substitution cipher</h3>
+<h1 class='text-center'>Homophonic substitution cipher</h1>
 <div><p>With the advent of Frequency analysis, the Monoalphabetic Cipher was compromised. An upgrade was desparately needed!
 The Homophonic cipher was invented to essentially cover up the flaw exposed by frequency analysis.</p>
 <p>The idea was to represent each letter with more than one substitution, depending on how often the letter appeared
   normally. For example, since the letter e occurs 12% of the time, it would be represented by 12 separate symbols, wheras
   the letter z would only be represented by 1 symbol.</p></div>
 <div><p> An example of such key is shown below:<p></div>
-<img src="./Images/HomophonTable.jpg">
 
-<!-- can edit this image -->
+<div class='container'>
 
+  <table class='table text-center table-bordered table-condensed'>
+    <tr>
+      <td>A</td>
+      <td>B</td>
+      <td>C</td>
+      <td>D</td>
+      <td>E</td>
+      <td>F</td>
+      <td>G</td>
+      <td>H</td>
+      <td>I</td>
+      <td>J</td>
+      <td>K</td>
+      <td>L</td>
+      <td>M</td>
+      <td>N</td>
+      <td>O</td>
+      <td>P</td>
+      <td>Q</td>
+      <td>R</td>
+      <td>S</td>
+      <td>T</td>
+      <td>U</td>
+      <td>V</td>
+      <td>W</td>
+      <td>Y</td>
+      <td>X</td>
+      <td>Z</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td>13</td>
+      <td>02</td>
+      <td>29</td>
+      <td>07</td>
+      <td>21</td>
+      <td>28</td>
+      <td>03</td>
+      <td>27</td>
+      <td>01</td>
+      <td>57</td>
+      <td>00</td>
+      <td>12</td>
+      <td>15</td>
+      <td>04</td>
+      <td>26</td>
+      <td>11</td>
+      <td>17</td>
+      <td>05</td>
+      <td>09</td>
+      <td>16</td>
+      <td>65</td>
+      <td>24</td>
+      <td>76</td>
+      <td>37</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>60</td>
+      <td>50</td>
+      <td>38</td>
+      <td>10</td>
+      <td>39</td>
+      <td>66</td>
+      <td>32</td>
+      <td>46</td>
+      <td></td>
+      <td></td>
+      <td>06</td>
+      <td>79</td>
+      <td>19</td>
+      <td>18</td>
+      <td>91</td>
+      <td></td>
+      <td>23</td>
+      <td>43</td>
+      <td>36</td>
+      <td>35</td>
+      <td></td>
+      <td>56</td>
+      <td></td>
+      <td>78</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td></td>
+      <td>53</td>
+      <td>81</td>
+      <td>20</td>
+      <td></td>
+      <td></td>
+      <td>52</td>
+      <td>62</td>
+      <td></td>
+      <td></td>
+      <td>40</td>
+      <td></td>
+      <td>33</td>
+      <td>48</td>
+      <td></td>
+      <td></td>
+      <td>42</td>
+      <td>47</td>
+      <td>44</td>
+      <td>75</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td></td>
+      <td></td>
+      <td>92</td>
+      <td>31</td>
+      <td></td>
+      <td></td>
+      <td>58</td>
+      <td>63</td>
+      <td></td>
+      <td></td>
+      <td>70</td>
+      <td></td>
+      <td>54</td>
+      <td>71</td>
+      <td></td>
+      <td></td>
+      <td>64</td>
+      <td>55</td>
+      <td>83</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>34</td>
+      <td></td>
+      <td></td>
+      <td>68</td>
+      <td>84</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>87</td>
+      <td>82</td>
+      <td></td>
+      <td></td>
+      <td>72</td>
+      <td>74</td>
+      <td>86</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>41</td>
+      <td></td>
+      <td></td>
+      <td>85</td>
+      <td>95</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>96</td>
+      <td>89</td>
+      <td></td>
+      <td></td>
+      <td>94</td>
+      <td>99</td>
+      <td>88</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>45</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>97</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>90</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>51</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>93</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>61</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>98</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>69</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>73</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
 
-
+  </table>
+</div>
+<div>
+  <p>The question still remains: How would you go about solving such a cipher? It is definitely a lot harder to crack than
+  the Monoalphabetic one, and the process seems daunting. However, though there are a few flaws in this cipher which, when
+  used cleverly and with a bit of luck, means that it can be cracked!</p>
+  <p>The trick here is to realise that though each letter can be represented by multiple numbers, each number corresponds to only
+  one letter! Yay! So where can we go with this handhold?</p>
+  <p>Now we can look for pairs on letters that appear frequently. From this we can guess what these numbers represent, and use our guesses
+    to slowly build up a picture of the ciphertext. To get you started, the most common 2 and 3 letter combinations in English are
+    "th", "in", "he", "er" and "the", "ing" and "and".</p>
+</div>
+<div class='puzzle jumbotron'>
+  <p class='lead'>Try and solve this one!</p>
+  <p>242539 5459283120694432, 1169 142752 124055028384 1319604304, 513259 089329 522198556817 18637491519429 30085231 2700 812028 51410953 0361437182407701066158 14279369
+  2978821264347089 48004419221706 6452 272005 8323643452999366 2811 51079204—582700 8108525321, 691398 49416067, 81208863 133829 6342 7870 — 982735216316 326540
+  160800 0511821264545974 047266 71997260 29416183 815363 51914467 5548159130 3437 142794 8120430060 643699100201 13 96414266 16565104. 480758 23256199836017066549,
+  430494 5978401208036963 047266 182181624989 48135493997205 30082031 16279349 81136052 241939 80110932 7759438321653501943784 58275561 332037 — 242526 123971445428324049
+  160800 17365132 39531974426928.
+  ― 05152296651874 3605768074, 310894 27108444080435679326'28 0122346613 4385 316471 016265714768</p>
+  <form>
+    Answer:
+    <input type='text' name="HomoAns">
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<!--For instance, on the planet Earth, man had always assumed that he was more intelligent than
+dolphins because he had achieved so much—the wheel, New York, wars and so on—whilst all
+the dolphins had ever done was muck about in the water having a good time. But conversely,
+the dolphins had always believed that they were far more intelligent than man—for precisely
+the same reasons.
+― Douglas Adams, The Hitchhiker's Guide to the Galaxy-->
 <nav aria-label="Page navigation">
   <ul class="pager">
     <li class="previous"><a href="./Monoalph.html"><span aria-hidden="true">&larr;</span> Previous</a></li>
@@ -37,6 +420,13 @@ The Homophonic cipher was invented to essentially cover up the flaw exposed by f
   </ul>
 </nav>
 
+</div>
+<div class="container">
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+    75%
+  </div>
+</div>
 </div>
 
 </body>

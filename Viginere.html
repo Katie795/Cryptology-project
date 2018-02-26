@@ -8,16 +8,32 @@
 </head>
 <body>
 
-  <div class="container">
-  <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-      50%
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">CFG</a>
+      </div> <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+        <ul class="nav navbar-nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Pigpen.html">The Pigpen Cipher</a></li>
+          <li><a href="./Caesar.html">The Caesar Cipher</a></li>
+          <li><a href="./Monoalph.html">The Monoalphabetic Cipher</a></li>
+          <li><a href="./Homophon.html">The Homophonic Cipher</a></li>
+          <li class="active"><a href="./Viginere.html">The Viginere Cipher</a></li>
+          <li><a href="./Completed.html">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
+  </nav>
 
 <div class="container">
-<h3>The Viginere Cipher</h3>
+<h1 class='text-center'>The Viginere Cipher</h1>
 <p>Are you ready for the hard one? I hope so! This cipher was made by Blaise de Viginere, a French diplomat, to
 cover up the flaws in the Monoalphabetic Cipher, by using more than one alphabet! This lets it fall into the class of
 a Polyalphabetic Cipher. Aptly, this cipher is also called the Chiffre Inde(acute)chiffrable (the Indecipherable Cipher!).
@@ -29,38 +45,65 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
 , a new type of code had to be invented. The idea was to use not just one, but several Caesar ciphers all
  at once, so frequency analysis is rendered useless. Check out this diagram:</p>
 
- <div>
-   <table>
-     <tr>
-       <th>A</th>
-       <th>B</th>
-       <th>C</th>
-       <th>D</th>
-       <th>E</th>
-       <th>F</th>
-       <th>G</th>
-       <th>H</th>
-       <th>I</th>
-       <th>J</th>
-       <th>K</th>
-       <th>L</th>
-       <th>M</th>
-       <th>N</th>
-       <th>O</th>
-       <th>P</th>
-       <th>Q</th>
-       <th>R</th>
-       <th>S</th>
-       <th>T</th>
-       <th>U</th>
-       <th>V</th>
-       <th>W</th>
-       <th>X</th>
-       <th>Y</th>
-       <th>Z</th>
-     </tr>
-     <tr>
-       <td>B</td>
+ <div class="container col-sm-8">
+   <table class="table table-sm table-bordered table-condensed">
+       <tr class='blue-grey lighten-4'>
+         <th>A</th>
+         <th>B</th>
+         <th>C</th>
+         <th>D</th>
+         <th>E</th>
+         <th>F</th>
+         <th>G</th>
+         <th>H</th>
+         <th>I</th>
+         <th>J</th>
+         <th>K</th>
+         <th>L</th>
+         <th>M</th>
+         <th>N</th>
+         <th>O</th>
+         <th>P</th>
+         <th>Q</th>
+         <th>R</th>
+         <th>S</th>
+         <th>T</th>
+         <th>U</th>
+         <th>V</th>
+         <th>W</th>
+         <th>X</th>
+         <th>Y</th>
+         <th>Z</th>
+       </tr>
+       <tr>
+         <td>B</td>
+         <td>C</td>
+         <td>D</td>
+         <td>E</td>
+         <td>F</td>
+         <td>G</td>
+         <td>H</td>
+         <td>I</td>
+         <td>J</td>
+         <td>K</td>
+         <td>L</td>
+         <td>M</td>
+         <td>N</td>
+         <td>O</td>
+         <td>P</td>
+         <td>Q</td>
+         <td>R</td>
+         <td>S</td>
+         <td>T</td>
+         <td>U</td>
+         <td>V</td>
+         <td>W</td>
+         <td>X</td>
+         <td>Y</td>
+         <td>Z</td>
+         <td>A</td>
+       </tr>
+       <tr>
        <td>C</td>
        <td>D</td>
        <td>E</td>
@@ -86,36 +129,9 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>Y</td>
        <td>Z</td>
        <td>A</td>
-     </tr>
-     <tr>
-       <td>C</td>
-       <td>D</td>
-       <td>E</td>
-       <td>F</td>
-       <td>G</td>
-       <td>H</td>
-       <td>I</td>
-       <td>J</td>
-       <td>K</td>
-       <td>L</td>
-       <td>M</td>
-       <td>N</td>
-       <td>O</td>
-       <td>P</td>
-       <td>Q</td>
-       <td>R</td>
-       <td>S</td>
-       <td>T</td>
-       <td>U</td>
-       <td>V</td>
-       <td>W</td>
-       <td>X</td>
-       <td>Y</td>
-       <td>Z</td>
-       <td>A</td>
        <td>B</td>
      </tr>
-     <tr>
+       <tr>
        <td>D</td>
        <td>E</td>
        <td>F</td>
@@ -143,7 +159,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>B</td>
        <td>C</td>
      </tr>
-     <tr>
+       <tr>
        <td>E</td>
        <td>F</td>
        <td>G</td>
@@ -171,7 +187,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>C</td>
        <td>D</td>
      </tr>
-     <tr>
+       <tr>
        <td>F</td>
        <td>G</td>
        <td>H</td>
@@ -199,7 +215,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>D</td>
        <td>E</td>
      </tr>
-     <tr>
+       <tr>
        <td>G</td>
        <td>H</td>
        <td>I</td>
@@ -227,7 +243,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>E</td>
        <td>F</td>
      </tr>
-     <tr>
+       <tr>
        <td>H</td>
        <td>I</td>
        <td>J</td>
@@ -255,7 +271,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>F</td>
        <td>G</td>
      </tr>
-     <tr>
+       <tr>
        <td>I</td>
        <td>J</td>
        <td>K</td>
@@ -283,7 +299,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>G</td>
        <td>H</td>
      </tr>
-     <tr>
+       <tr>
        <td>J</td>
        <td>K</td>
        <td>L</td>
@@ -311,7 +327,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>H</td>
        <td>I</td>
      </tr>
-     <tr>
+       <tr>
        <td>K</td>
        <td>L</td>
        <td>M</td>
@@ -339,7 +355,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>I</td>
        <td>J</td>
      </tr>
-     <tr>
+       <tr>
        <td>L</td>
        <td>M</td>
        <td>N</td>
@@ -367,7 +383,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>J</td>
        <td>K</td>
      </tr>
-     <tr>
+       <tr>
        <td>M</td>
        <td>N</td>
        <td>O</td>
@@ -395,7 +411,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>K</td>
        <td>L</td>
      </tr>
-     <tr>
+       <tr>
        <td>N</td>
        <td>O</td>
        <td>P</td>
@@ -423,7 +439,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>L</td>
        <td>M</td>
      </tr>
-     <tr>
+       <tr>
        <td>O</td>
        <td>P</td>
        <td>Q</td>
@@ -451,7 +467,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>M</td>
        <td>N</td>
      </tr>
-     <tr>
+       <tr>
        <td>P</td>
        <td>Q</td>
        <td>R</td>
@@ -479,7 +495,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>N</td>
        <td>O</td>
      </tr>
-     <tr>
+       <tr>
        <td>Q</td>
        <td>R</td>
        <td>S</td>
@@ -507,7 +523,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>O</td>
        <td>P</td>
      </tr>
-     <tr>
+       <tr>
        <td>R</td>
        <td>S</td>
        <td>T</td>
@@ -535,7 +551,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>P</td>
        <td>Q</td>
      </tr>
-     <tr>
+       <tr>
        <td>S</td>
        <td>T</td>
        <td>U</td>
@@ -563,7 +579,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>Q</td>
        <td>R</td>
      </tr>
-     <tr>
+       <tr>
        <td>T</td>
        <td>U</td>
        <td>V</td>
@@ -591,7 +607,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>R</td>
        <td>S</td>
      </tr>
-     <tr>
+       <tr>
        <td>U</td>
        <td>V</td>
        <td>W</td>
@@ -619,7 +635,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>S</td>
        <td>T</td>
      </tr>
-     <tr>
+       <tr>
        <td>V</td>
        <td>W</td>
        <td>X</td>
@@ -647,7 +663,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>T</td>
        <td>U</td>
      </tr>
-     <tr>
+       <tr>
        <td>W</td>
        <td>X</td>
        <td>Y</td>
@@ -675,7 +691,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>U</td>
        <td>V</td>
      </tr>
-     <tr>
+       <tr>
        <td>X</td>
        <td>Y</td>
        <td>Z</td>
@@ -703,7 +719,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>V</td>
        <td>W</td>
      </tr>
-     <tr>
+       <tr>
        <td>Y</td>
        <td>Z</td>
        <td>A</td>
@@ -731,7 +747,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>W</td>
        <td>X</td>
      </tr>
-     <tr>
+       <tr>
        <td>Z</td>
        <td>A</td>
        <td>B</td>
@@ -759,7 +775,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
        <td>X</td>
        <td>Y</td>
      </tr>
-     <tr>
+       <tr>
        <td>A</td>
        <td>B</td>
        <td>C</td>
@@ -798,8 +814,8 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
   changed to h. For the next letter we would take the next letter of the codeword, L, and use that row to encrypt o,
   and we would carry on like that. So the message would be sent like this:</p>
 
-  <div>
-    <table>
+  <div class='col-sm-6'>
+    <table class='table table-bordered table-condensed'>
       <tr>
         <td>B</td>
         <td>L</td>
@@ -840,7 +856,7 @@ It was finally broken by Charles Babbage, an English Mathematitian, in 1854.<p>
         <td>A</td>
       </tr>
     </table>
-  <div>
+  </div>
 
 <div><p>Do you see how this comes about? Notice that although there is a double o in 'good', each o is enciphered to a
 different letter! And also notice that the letter H appears twice in the ciphertext, but it represents both a
@@ -855,8 +871,8 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
 
 <p>To figure out how long the codeword is, we need to look for patterns. Check out this example, with the codeword LUCKY:</p>
 
-<div>
-  <table>
+<div class='col-sm-6'>
+  <table class="table table-bordered table-condensed">
     <tr>
       <td>L</td>
       <td>U</td>
@@ -927,7 +943,7 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
       <td>J</td>
     </tr>
   </table>
-<div>
+</div>
 
 <p> Did you see how EBGC is repeated twice? This is becuase it overlaps the same part of the codeword! As a general
   rule, any repetition for more that 4 letters in a row is more likely to be an overlap of a common word than a
@@ -946,20 +962,54 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
     to figure out already, then we have solved the Viginere Cipher!
 <p>
 
-<div>
+<div class="puzzle jumbotron">
   <h3>The Final Challenge</h3>
-<p>Now for the last one... The hardest one. Are you up for the challenge?<br>If you manage to solve this one, as well
+  <p>Now for the last one... The hardest one. Are you up for the challenge?<br>If you manage to solve this one, as well
   as all the other ones, let us know, and we'll give you some recognition on our soon to be up and running interactive part of
   the website!<br> Good luck...</br>
-  SJVVVTOLKCIRGYNVEKFXJVWNTXNVHBXJGIIGUIDIXPWIPYSEVMPPEASRFRRWULCZRBFKCJSNDEPUCHMPGRVGLLCKPHNIFFILFXOVEGDICEMGY
-  EPUGHETCECWGIUEXFWEPJIVMVKKCTFHAFYEWETEXASXMZWLWWCIIGLGQEXKSGVJEGYTTVWXFXURVXFXRISFAWGJEGYCQLFXYMPKSTUGGGXRGYT
-  UIYWEVJABLLAFYKZICUYISRFPSNJIAVWHHIPNMMZXJVKKSGGFJTFEFLPMFSVKLXYVKVJHXEEYMEVEHKIKSAJZPXRGYNVEKFXJEMWZGEWNFWJZ
-  RXTYTEWBXCQLKXLXQFQNULUFTESRVPSNJSYEKTJHGEEGYHGTSKSXGPSNJSYEWHMPKEWMWEFFJPSMVZRZXSTJSFWSPVXHTVKEKRGYHCSPWVURR
-  WQSWCITJRVYEMQSWIITDPATEGWRFLVXQSWWIITDPUSASZGNSKLLUFPBNIVFPXSVPRRWCRQNCHMVUVPYSRFZRWGMPXWHQSWNMEDPGRVGLSNZZX
+  SJVVVTOLKCIRGYNVEKFXJVWNTXNVHBXJGIIGUIDIXPWIPYSEVMPPEASRFRRWULCZRBFKCJSNDEPUCHMPGRVGLLCKPHNIFFILFXOVEGDICEMGYEPUGHETCECWGIUEXFWEPJIVMVKKCTFHAFYEWETEXASXMZWLWWCIIGLGQEXKSGVJEGYTTVWXFXURVXFXRISFAWGJEGYCQLFXYMPKSTUGGGXRGYTUIYWEVJABLLAFYKZICUYISRFPSNJIAVWHHIPNMMZXJVKKSGGFJTFEFLPMFSVKLXYVKVJHXEEYMEVEHKIKSAJZPXRGYNVEKFXJEMWZGEWNFWJZRXTYTEWBXCQL
+  KXLXQFQNULUFTESRVPSNJSYEKTJHGEEGYHGTSKSXGPSNJSYEWHMPKEWMWEFFJPSMVZRZXSTJSFWSPVXHTVKEKRGYHCSPWV
+  URRWQSWCITJRVYEMQSWIITDPATEGWRFLVXQSWWIITDPUSASZGNSKLLUFPBNIVFPRRWCRQNCHMVUVPYSRFZRWGMPXWHQSWNMEDPGRVGLSNZZX
   -NITFRBUECJLHXJUKEED.
-</p>
-
+  </p>
+  <form>
+    Answer:
+    <input type='text' name="ViginAns">
+    <input type="submit" value="Submit">
+  </form>
 </div>
+
+<!-- After a while you learn
+the subtle difference between
+holding a hand and chaining a soul
+and you learn
+that love doesn’t mean leaning
+and company doesn’t always mean security.
+And you begin to learn
+that kisses aren’t contracts
+and presents aren’t promises
+and you begin to accept your defeats
+with your head up and your eyes ahead
+with the grace of woman, not the grief of a child
+and you learn
+to build all your roads on today
+because tomorrow’s ground is
+too uncertain for plans
+and futures have a way of falling down
+in mid-flight.
+After a while you learn
+that even sunshine burns
+if you get too much
+so you plant your own garden
+and decorate your own soul
+instead of waiting for someone
+to bring you flowers.
+And you learn that you really can endure
+you really are strong
+you really do have worth
+so live to learn and know yourself,
+and in doing so you will learn to live. - Veronica A Shoffstall -->
+
 <nav aria-label="Page navigation">
   <ul class="pager">
     <li class="previous"><a href="./Homophon.html"><span aria-hidden="true">&larr;</span> Previous</a></li>
@@ -969,5 +1019,12 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
 
 </div>
 
+<div class="container">
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+    50%
+  </div>
+</div>
+</div>
 </body>
 </html>

@@ -8,13 +8,29 @@
 </head>
 <body>
 
-  <div class="container">
-  <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:20%">
-      20%
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">CFG</a>
+      </div> <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+        <ul class="nav navbar-nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Pigpen.html">The Pigpen Cipher</a></li>
+          <li class="active"><a href="./Caesar.html">The Caesar Cipher</a></li>
+          <li><a href="./Monoalph.html">The Monoalphabetic Cipher</a></li>
+          <li><a href="./Homophon.html">The Homophonic Cipher</a></li>
+          <li><a href="./Viginere.html">The Viginere Cipher</a></li>
+          <li><a href="./Completed.html">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
+  </nav>
 
 <html>
 <div class='container'>
@@ -31,8 +47,10 @@ For instance, you could shift the alphabet 7 terms to the right, check out this 
 </div>
 
 
-<div class='container-fluid'>
-  <div class='table text-center'>
+<div class='container col-md-6 center'>
+
+  <table class='table text-center table-bordered table-condensed'>
+    <tr>
       <td>A</td>
       <td>B</td>
       <td>C</td>
@@ -59,8 +77,8 @@ For instance, you could shift the alphabet 7 terms to the right, check out this 
       <td>Y</td>
       <td>X</td>
       <td>Z</td>
-    </div>
-    <div class='table text-center'>
+    </tr>
+    <tr>
       <td>H</td>
       <td>I</td>
       <td>J</td>
@@ -87,7 +105,8 @@ For instance, you could shift the alphabet 7 terms to the right, check out this 
       <td>E</td>
       <td>F</td>
       <td>G</td>
-  </div>
+    </tr>
+  </table>
 </div>
 
 <div class='container'>
@@ -97,16 +116,16 @@ It is even easier if you can narrow it down beforehand, for instance the only si
 so they are good words to look out for.</p>
 </div>
 
-<div class='jumbotron'>
+<div class='container puzzle jumbotron'>
   <p class='lead'>Let's see if you can solve this one!</p>
-    <div class='table'>V JVYY JNVG SBE LBH NG GUR OEVQTR</div>
-    <form name="AnswerC" onsubmit="return CheckC()">
+    <p>V JVYY JNVG SBE LBH NG GUR OEVQTR</p>
+    <form>
       Answer:
-      <input name="MyAnswerC" type="text" nam>
+      <input type='text' name="CaesAns">
       <input type="submit" value="Submit">
     </form>
 </div>
-
+<!-- I will wait for you at the bridge -->
 <div class='container'>
 <nav aria-label="Page navigation">
   <ul class="pager">
@@ -116,6 +135,13 @@ so they are good words to look out for.</p>
 </nav>
 </div>
 
+<div class="container">
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+    20%
+  </div>
+</div>
+</div>
 
 </body>
 </html>
