@@ -5,6 +5,18 @@
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+  function CheckC() {
+  var x = document.forms['AnsC']['MonoAns'].value;
+
+  if (x == "Problems worthy of attack prove their worth by fighting back Paul Erdos") {
+    alert('Well done! You cracked the code!');
+  }
+  else {
+    alert('Oops! Have another go.');
+  }
+  }
+  </script>
 </head>
 <body>
 
@@ -54,7 +66,9 @@ Al Kindi found that the letters a and l appear more often that the other letters
 <div class="container puzzle jumbotron">
   <p> Try and solve this one! </p>
   <p>UVBIMGWY ZBVOKT BR HOOHXA UVBDG OKGJV ZBVOK IT RJLKOJCL IHXA - UHPM GVFBY</p>
-  <form>
+
+
+  <form name='AnsC' onsubmit='return CheckC()'>
     Answer:
     <input type='text' name="MonoAns">
     <input type="submit" value="Submit">
