@@ -6,3 +6,8 @@
 .navbar-nav {
   text-align: center;
 }
+
+.limit {
+  width: 1150px;
+  word-wrap: break-word;
+}
