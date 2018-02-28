@@ -5,6 +5,18 @@
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src='./jquery-3.3.1.min.js'></script>
+  <script>
+  function CheckC() {
+  var x = document.forms['AnsC']['PigpenAns'].value;
+
+  if (x == 'Do or do not there is not try yoda') {
+    alert('Well done! You cracked the code!');
+  }
+  else {
+    alert('Oops! Have another go.');
+  }
+  }
+  </script>
 </head>
 <body>
 
@@ -161,7 +173,7 @@
 </div>
 
 
-<form>
+<form name='AnsC' onsubmit='return CheckC()'>
   Answer:
   <input type='text' name="PigpenAns">
   <input type="submit" value="Submit">

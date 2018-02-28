@@ -5,6 +5,18 @@
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src='./jquery-3.3.1.min.js'></script>
+  <script>
+  function CheckC() {
+  var x = document.forms['AnsC']['ViginAns'].value;
+
+  if (x == 'After a while you learn the subtle difference between holding a hand and chaining a soul and you learn that love doesn’t mean leaning and company doesn’t always mean security. And you begin to learn that kisses aren’t contracts and presents aren’t promises and you begin to accept your defeats with your head up and your eyes ahead with the grace of woman, not the grief of a child and you learn to build all your roads on today because tomorrow’s ground is too uncertain for plans and futures have a way of falling down in mid-flight. After a while you learn that even sunshine burns if you get too much so you plant your own garden and decorate your own soul instead of waiting for someone to bring you flowers. And you learn that you really can endure you really are strong you really do have worth so live to learn and know yourself,and in doing so you will learn to live. - Veronica A Shoffstall') {
+    alert('Well done! You cracked the code!');
+  }
+  else {
+    alert('Oops! Have another go.');
+  }
+  }
+  </script>
 </head>
 <body>
 
@@ -973,7 +985,7 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
   URRWQSWCITJRVYEMQSWIITDPATEGWRFLVXQSWWIITDPUSASZGNSKLLUFPBNIVFPRRWCRQNCHMVUVPYSRFZRWGMPXWHQSWNMEDPGRVGLSNZZX
   -NITFRBUECJLHXJUKEED.
 </p><br>
-  <form>
+  <form name='AnsC' onsubmit='return CheckC()'>
     Answer:
     <input type='text' name="ViginAns">
     <input type="submit" value="Submit">
