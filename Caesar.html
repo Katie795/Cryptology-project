@@ -5,6 +5,19 @@
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src='./jquery-3.3.1.min.js'></script>
+  <script src='index.js'></script>
+<script>
+function CheckC() {
+var x = document.forms['AnsC']['CaesAns'].value;
+
+if (x == 'I will wait for you at the bridge') {
+  alert('Well done! You cracked the code!');
+}
+else {
+  alert('Oops! Try again');
+}
+}
+  </script>
 </head>
 <body>
 
@@ -119,12 +132,14 @@ so they are good words to look out for.</p>
 <div class='container puzzle jumbotron'>
   <p class='lead'>Let's see if you can solve this one!</p>
     <p>V JVYY JNVG SBE LBH NG GUR OEVQTR</p>
-    <form>
+    <form name='AnsC' onsubmit='return CheckC()' method='POST'>
       Answer:
       <input type='text' name="CaesAns">
       <input type="submit" value="Submit">
     </form>
 </div>
+
+
 <!-- I will wait for you at the bridge -->
 <div class='container'>
 <nav aria-label="Page navigation">
