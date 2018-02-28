@@ -93,7 +93,7 @@
 <br><br><br><br><br><br>
 <h2 class='text-center'> Now time for the challenge! Can you crack the code?</h2>
 <br><br><br>
-<div class='puzzle jumbotron'>
+<div class='container puzzle jumbotron'>
   <div class='container'>
 <div class='col-sm-1'>
 <img src='./Images/PigD.jpg'>
@@ -174,9 +174,14 @@
 
 
 <form name='AnsC' onsubmit='return CheckC()'>
-  Answer:
-  <input type='text' name="PigpenAns">
-  <input type="submit" value="Submit">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" name='PigpenAns'>
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit" value='Submit'>Submit!</button>
+      </span>
+    </div>
+  </div>
 </form>
 </div>
 

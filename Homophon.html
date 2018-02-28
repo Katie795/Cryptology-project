@@ -9,7 +9,7 @@
   function CheckC() {
   var x = document.forms['AnsC']['HomoAns'].value;
 
-  if (x == "For instance, on the planet Earth, man had always assumed that he was more intelligent than dolphins because he had achieved so much—the wheel, New York, wars and so on—whilst all the dolphins had ever done was muck about in the water having a good time. But conversely, the dolphins had always believed that they were far more intelligent than man—for precisely the same reasons. Douglas Adams, The Hitchhiker's Guide to the Galaxy") {
+  if (x == "For instance, on the planet Earth, man had always assumed that he was more intelligent than dolphins because he had achieved so much—the wheel, New York, wars and so on—whilst all the dolphins had ever done was muck about in the water having a good time. But conversely, the dolphins had always believed that they were far more intelligent than man—for precisely the same reasons. - Douglas Adams, The Hitchhiker's Guide to the Galaxy") {
     alert('Well done! You cracked the code!');
   }
   else {
@@ -405,7 +405,7 @@ The Homophonic cipher was invented to essentially cover up the flaw exposed by f
     to slowly build up a picture of the ciphertext. To get you started, the most common 2 and 3 letter combinations in English are
     "th", "in", "he", "er" and "the", "ing" and "and".</p>
 </div>
-<div class='puzzle jumbotron'>
+<div class='container puzzle jumbotron'>
   <p class='lead'>Try and solve this one!</p>
   <p>242539 5459283120694432, 1169 142752 124055028384 1319604304, 513259 089329 522198556817 18637491519429 30085231 2700 812028 51410953 0361437182407701066158 14279369
   2978821264347089 48004419221706 6452 272005 8323643452999366 2811 51079204—582700 8108525321, 691398 49416067, 81208863 133829 6342 7870 — 982735216316 326540
@@ -414,9 +414,14 @@ The Homophonic cipher was invented to essentially cover up the flaw exposed by f
   160800 17365132 39531974426928.
   ― 05152296651874 3605768074, 310894 27108444080435679326'28 0122346613 4385 316471 016265714768</p>
   <form name='AnsC' onsubmit='return CheckC()'>
-    Answer:
-    <input type='text' name="HomoAns">
-    <input type="submit" value="Submit">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" name='HomoAns'>
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit" value='Submit'>Submit!</button>
+        </span>
+      </div>
+    </div>
   </form>
 </div>
 <!--For instance, on the planet Earth, man had always assumed that he was more intelligent than

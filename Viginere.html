@@ -975,7 +975,7 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
 <p>
 
 <div class='limit'>
-<div class="puzzle jumbotron">
+<div class="container puzzle jumbotron">
   <h3>The Final Challenge</h3>
   <p>Now for the last one... The hardest one. Are you up for the challenge?<br>If you manage to solve this one, as well
   as all the other ones, let us know, and we'll give you some recognition on our soon to be up and running interactive part of
@@ -985,11 +985,16 @@ g and a d! This is the brilliance of the Viginere cipher. No wonder it was calle
   URRWQSWCITJRVYEMQSWIITDPATEGWRFLVXQSWWIITDPUSASZGNSKLLUFPBNIVFPRRWCRQNCHMVUVPYSRFZRWGMPXWHQSWNMEDPGRVGLSNZZX
   -NITFRBUECJLHXJUKEED.
 </p><br>
-  <form name='AnsC' onsubmit='return CheckC()'>
-    Answer:
-    <input type='text' name="ViginAns">
-    <input type="submit" value="Submit">
-  </form>
+<form name='AnsC' onsubmit='return CheckC()'>
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" name='ViginAns'>
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit" value='Submit'>Submit!</button>
+      </span>
+    </div>
+  </div>
+</form>
 </div>
 </div>
 
