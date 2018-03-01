@@ -23,3 +23,11 @@ h1 {
   border-style: solid;
   border-color: black;
 }
+
+.answer {
+  opacity: 0;
+}
+
+.show-answer {
+  opacity: 1;
+}
