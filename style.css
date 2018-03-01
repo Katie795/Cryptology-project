@@ -11,3 +11,15 @@
   width: 1150px;
   word-wrap: break-word;
 }
+
+body {
+  background-image: url("./grey/grey.png")
+}
+
+h1 {
+  background-color: rgb(60, 60, 60);
+  padding: 25px 50px;
+  color: white;
+  border-style: solid;
+  border-color: black;
+}
