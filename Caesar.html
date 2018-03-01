@@ -16,6 +16,10 @@ else {
   alert('Oops! Have another go.');
 }
 }
+
+function Hint() {
+ alert("It's easier if you can narrow it down, for instance the only single letter words in English are a, and I, so they are good to look out for.")
+}
   </script>
 </head>
 <body>
@@ -46,9 +50,7 @@ else {
 
 <html>
 <div class='container'>
-  <div id='C' class=' container-fluid text-center'>
-  <h1>The Caesar Cipher</h1>
-</div>
+  <h1 class='text-center'>The Caesar Cipher</h1>
   <br><br><p>This is one of the earliest known examples of ciphers in written history,
   appearing in Julius Caesars’ Gallic Wars, where a war is won by with the
    help of this cipher.
@@ -124,12 +126,11 @@ For instance, you could shift the alphabet 7 terms to the right, check out this 
 <div class='container'>
   <p>However, as you can see, there are 24 other possible combinations to choose from, so it is not a
   very secure form of coding, as the solution can often be found by simply trying all the possible combinations!
-It is even easier if you can narrow it down beforehand, for instance the only single letter words in English are a, and I,
-so they are good words to look out for.</p>
+</p>
 </div>
 
 <div class='container puzzle jumbotron'>
-  <p class='lead'>Let's see if you can solve this one!</p>
+  <h2>Let's see if you can solve this one!</h2><br><br><br>
     <p>V JVYY JNVG SBE LBH NG GUR OEVQTR</p>
     <form name='AnsC' onsubmit='return CheckC()'>
       <div class="col-lg-6">
@@ -141,6 +142,7 @@ so they are good words to look out for.</p>
         </div>
       </div>
     </form>
+    <button onclick='Hint()' class='btn btn-defualt'>Hint</button>
 </div>
 
 
@@ -149,7 +151,7 @@ so they are good words to look out for.</p>
 <nav aria-label="Page navigation">
   <ul class="pager">
     <li class="previous"><a href="./Pigpen.html"><span aria-hidden="true">&larr;</span> Previous</a></li>
-    <li class="next"><a href="./Monoalph.html"> Next<span aria-hidden="true">&rarr;</span></a></li>
+    <li class="next"><a href="./Monoalph.html">Next<span aria-hidden="true">&rarr;</span></a></li>
   </ul>
 </nav>
 </div>

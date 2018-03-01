@@ -16,6 +16,10 @@
     alert('Oops! Have another go.');
   }
   }
+
+  function Hint() {
+    alert('Hint')
+  }
   </script>
 </head>
 <body>
@@ -46,11 +50,11 @@
 
 <div class="container">
 <h1 class='text-center'>The Homophonic substitution Cipher</h1>
-<div><p>With the advent of Frequency analysis, the Monoalphabetic Cipher was compromised. An upgrade was desparately needed!
+<br><br><p>With the advent of Frequency analysis, the Monoalphabetic Cipher was compromised. An upgrade was desparately needed!
 The Homophonic cipher was invented to essentially cover up the flaw exposed by frequency analysis.</p>
 <p>The idea was to represent each letter with more than one substitution, depending on how often the letter appeared
   normally. For example, since the letter e occurs 12% of the time, it would be represented by 12 separate symbols, wheras
-  the letter z would only be represented by 1 symbol.</p></div>
+  the letter z would only be represented by 1 symbol.</p>
 <div><p> An example of such key is shown below:<p></div>
 
 <div class='container'>
@@ -423,6 +427,7 @@ The Homophonic cipher was invented to essentially cover up the flaw exposed by f
       </div>
     </div>
   </form>
+  <button onclick='Hint()' class='btn btn-defualt'>Hint</button>
 </div>
 <!--For instance, on the planet Earth, man had always assumed that he was more intelligent than
 dolphins because he had achieved so much—the wheel, New York, wars and so on—whilst all

@@ -16,6 +16,10 @@
     alert('Oops! Have another go.');
   }
   }
+
+  function Hint() {
+    alert('Hint')
+  }
   </script>
 </head>
 <body>
@@ -47,8 +51,7 @@
 
 <div class='container'>
 <h1 class='text-center'>The Pigpen Cipher</h1>
-
-<p>This is a classic cipher which has been popular throughout history, and has been used by the
+<br><br><p>This is a classic cipher which has been popular throughout history, and has been used by the
   Church, and more notoriously, by the Freemasons, which is why is is sometimes referred to as the
 "Freemasons Cipher". It also looks pretty!</p><br><br>
 </div>
@@ -87,13 +90,12 @@
 <img src='./Images/PigO2.jpg'>
 </div>
 </div>
+<br><br><br><br><br>
 
 
-<div class='container'>
-<br><br><br><br><br><br>
-<h2 class='text-center'> Now time for the challenge! Can you crack the code?</h2>
-<br><br><br>
 <div class='container puzzle jumbotron'>
+<h2> Now time for the challenge! Can you crack the code?</h2>
+<br><br><br>
   <div class='container'>
 <div class='col-sm-1'>
 <img src='./Images/PigD.jpg'>
@@ -172,7 +174,6 @@
 </div>
 </div>
 
-
 <form name='AnsC' onsubmit='return CheckC()'>
   <div class="col-lg-6">
     <div class="input-group">
@@ -183,7 +184,12 @@
     </div>
   </div>
 </form>
+
+<div class='container'>
+<button onclick='Hint()' class='btn btn-defualt' type='submit' vaue='Submit'>Hint</button>
 </div>
+</div>
+
 
 
 <div class='container'>
