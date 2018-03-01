@@ -33,29 +33,35 @@
 </nav>
 
 <html>
-<div class='container text-center'>
-  <div class='jumbotron'>
+<div class='container text-center jumbotron'>
     <h2>Did you manage to solve our any of our ciphers?</h2><br><br>
     <p class='lead'>If you managed to get an answer for our ciphers, drop us an email below and we'll add you to
       our hall of fame, with a special mention if you are the first one to be able to solve it! We'd love to hear your feedback
       so if you have any additional comments please feel free to send us an email below.</p>
 
 
-      <form action="./Email.php" method="POST">
-      Name: <input type="text" name="name">
-      E-mail: <input type="text" name="email">
-      <input type="submit">
-      </form>
+      <div class='container'>
+      <form>
+      	<div class="form-group">
+      			<label>Leave us a comment</label>
+      			<textarea class="form-control" rows="5"></textarea>
+      	</div>
+        <div class="col-sm-6">
+      	<div class="form-group">
+      			<input class="form-control" aria-describedby="emailHelp" placeholder="Your email address" type="email">
+      	</div>
+      		  <button class="button" onclick="alert('This form is currently disabled.')">Submit</button>
+          </div>
+      	</form>
+</div>
+</div>
 
-  </div>
-
-
+<div class='container'>
 <nav aria-label="Page navigation">
   <ul class="pager">
     <li class="previous"><a href="./Viginere.html"><span aria-hidden="true">&larr;</span> Previous</a></li>
   </ul>
 </nav>
-
 </div>
 
 <body>
