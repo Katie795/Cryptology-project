@@ -24,10 +24,14 @@ h1 {
   border-color: black;
 }
 
-.answer {
+answer {
   opacity: 0;
 }
 
-.show-answer {
+.show-answer answer {
   opacity: 1;
+}
+
+.hide-answer {
+
 }
