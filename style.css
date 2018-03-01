@@ -19,3 +19,11 @@ body {
 .title {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+
+h1 {
+  background-color: rgb(60, 60, 60);
+  padding: 25px 50px;
+  color: white;
+  border-style: solid;
+  border-color: black;
+}
