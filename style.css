@@ -11,3 +11,11 @@
   width: 1150px;
   word-wrap: break-word;
 }
+
+body {
+  background-image: url("./grey/grey.png")
+}
+
+.title {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
