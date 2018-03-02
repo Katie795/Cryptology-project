@@ -11,4 +11,8 @@ else {
 }
 }
 
+$('div.toggler').on('click', function() {
+  $(this).toggleClass('show-answer hide-answer');
+});
+
 </script>

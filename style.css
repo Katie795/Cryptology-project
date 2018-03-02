@@ -32,6 +32,6 @@ h1 {
   opacity: 1;
 }
 
-.hide-answer {
-
+.hide-answer .puzzle {
+  height: 25px
 }
