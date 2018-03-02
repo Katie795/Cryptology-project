@@ -11,8 +11,13 @@ else {
 }
 }
 
-$('div.toggler').on('click', function() {
-  $(this).toggleClass('show-answer hide-answer');
+
+
+$(document).ready(function(){
+  $('button').on('click', function() {
+    $(this).toggleClass('show-answer hide-answer');
+  });
 });
+
 
 </script>
