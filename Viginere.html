@@ -21,6 +21,12 @@
   function Hint() {
     alert('Hint')
   }
+
+  $(document).ready(function(){
+    $('#Vbtn').on('click', function() {
+      $(.toggle).toggleClass('show-answer hide-answer');
+    });
+  });
   </script>
 </head>
 <body>
@@ -994,9 +1000,9 @@ as all the other ones, let us know, and we'll give you some recognition on our s
 the website!<br><br> Good luck...<br><br>
 
 <div class='limit'>
-  <div class="toggler hide-answer">
-  <div class="container puzzle jumbotron hide-answer">
-    <button type="button" class="btn btn-success">The Viginere Challenge</button>
+  <div class="toggle hide-answer">
+  <div class="container puzzle jumbotron">
+    <button type="button" class="btn btn-success" id="Vbtn">The Viginere Challenge</button>
       <div class="answer">
         <p>SJVVVTOLKCIRGYNVEKFXJVWNTXNVHBXJGIIGUIDIXPWIPYSEVMPPEASRFRRWULCZRBFKCJSNDEPUCHMPGRVGLLCKPHNIFFILFXOVEGDICEMGYEPUGHETCECWGIUEXFWEPJIVMVKKCTFHAFYEWETEXASXMZWLWWCIIGLGQEXKSGVJEGYTTVWXFXURVXFXRISFAWGJEGYCQLFXYMPKSTUGGGXRGYTUIYWEVJABLLAFYKZICUYISRFPSNJIAVWHHIPNMMZXJVKKSGGFJTFEFLPMFSVKLXYVKVJHXEEYMEVEHKIKSAJZPXRGYNVEKFXJEMWZGEWNFWJZRXTYTEWBXCQLKXLXQFQNULUFTESRVPSNJSYEKTJHGEEGYHGTSKSXGPSNJSYEWHMPKEWMWEFFJPSMVZRZXSTJSFWSPVXHTVKEKRGYHCSPWVURRWQSWCITJRVYEMQSWIITDPATEGWRFLVXQSWWIITDPUSASZGNSKLLUFPBNIVFPWCRQNCHMVUVPYSRFZRWGMPXWHQSWNMEDPGRVGLSNZZX-NITFRBUECJLHXJUKEED.
        </p>

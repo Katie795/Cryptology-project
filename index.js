@@ -14,7 +14,7 @@ else {
 
 
 $(document).ready(function(){
-  $('button').on('click', function() {
+  $('.toggle').on('click', function() {
     $(this).toggleClass('show-answer hide-answer');
   });
 });
