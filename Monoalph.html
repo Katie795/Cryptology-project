@@ -49,23 +49,93 @@
 
 <div class="container">
 <h1 class=text-center>The Monoalphabetic Substitution Cipher</h1>
-<br><br><p>This type of cipher is a step up from the Caesar cipher in that instead of having just 25 possible ciphers,
-  any permutation of letters is allowed! See diagram
- This means that there are 40000000000000000000000000 possible outcomes that could happen! In fact, up until the 16th Century,
- this cipher seemed impossible to crack. The technique of frequency analysis was invented
-  by Al Kindi, the ‘Philosopher of Arabs’, and was a major breakthrough in the battle between cryptographers and cryptanalysists.</p>
+<h2>History</h2>
+<p>The Monoalphabetic Cipher was much more secure and was regarded as unbreakable until the 16th century. The technique to solve it was invented
+ by Al Kindi, who was known by some as the ‘Philosopher of Arabs’, and this was a major breakthrough in the battle between cryptographers and cryptanalysists.</p>
+<h2>How it works</h2>
+<p>This type of cipher is a step up from the Caesar cipher. It is similar in some respects, as each letter is swapped with another in the alphabet.
+   However, instead of having just 25 possible ciphers, any permutation of letters is allowed! For example, </p>
 
+   <table class='table text-center table-bordered table-condensed'>
+     <tr>
+       <td>A</td>
+       <td>B</td>
+       <td>C</td>
+       <td>D</td>
+       <td>E</td>
+       <td>F</td>
+       <td>G</td>
+       <td>H</td>
+       <td>I</td>
+       <td>J</td>
+       <td>K</td>
+       <td>L</td>
+       <td>M</td>
+       <td>N</td>
+       <td>O</td>
+       <td>P</td>
+       <td>Q</td>
+       <td>R</td>
+       <td>S</td>
+       <td>T</td>
+       <td>U</td>
+       <td>V</td>
+       <td>W</td>
+       <td>Y</td>
+       <td>X</td>
+       <td>Z</td>
+     </tr>
+     <tr>
+       <td>D</td>
+       <td>Q</td>
+       <td>L</td>
+       <td>S</td>
+       <td>B</td>
+       <td>F</td>
+       <td>R</td>
+       <td>Y</td>
+       <td>K</td>
+       <td>U</td>
+       <td>O</td>
+       <td>A</td>
+       <td>V</td>
+       <td>E</td>
+       <td>X</td>
+       <td>Z</td>
+       <td>I</td>
+       <td>N</td>
+       <td>P</td>
+       <td>H</td>
+       <td>G</td>
+       <td>W</td>
+       <td>M</td>
+       <td>T</td>
+       <td>C</td>
+       <td>J</td>
+     </tr>
+   </table>
+ </div>
 
-<p>The key to cracking this cipher lies in the fact that some letters appear more than others, depending on the language. For example,
-Al Kindi found that the letters a and l appear more often that the other letters in Arabic. Likewise, in English, the most common
- letter in English is e, which occurs 12.7% of the time, followed by t, then a, then o. Of course, the shorter the text, the more
- likely the letters are to deviate from the norm! </p><br><br>
+ <div class=container><p> is a valid cipher. As you can probably imagine, there are a many more possible combinations than the Caesar cipher!
+   In fact, there are more than 40000000000000000000000000 possible combinations! You can see why it was seen as impossible to crack for
+ so long.</p>
 
-<div class='col-sm-8'>
-<img src='./Images/freq-ana.jpg'><br><br><br>
+<div><h2>How to solve</h2>
+<p>Thankfully, it is not uncrackable. The key to cracking this cipher lies in the fact that some letters appear more than others, depending on the language. For example,
+Al Kindi found that in Arabic, the letters a and l appear more often that the other letters. Likewise, in English, the most common
+ letter is e, which occurs 12.7% of the time. This is followed by t, then a, then o. A graph of the frequency of letters in Engish is found below:</p>
+
+  <div class='col-sm-8'>
+    <img src='./Images/freq-ana.jpg'><br><br><br>
+  </div>
+
+  <p>Armed with this very useful information, we are now ready to crack the cipher! A surefire way to get started is to count the frequency of the letters, and guess,
+    based on how often it appears and where it appears, the most common letters. From there we can fill in the gaps. For example, having guessed e and t,
+    if we find a sequence tXe, we can make an educated guess that X is h, and fill in all the h's from there. Of course, the shorter the text, the more likely <thead>
+      frequency of the letters are to deviate from the norm!
+    </thead>
 </div>
 </div>
-
 <div class="container puzzle jumbotron">
   <p> Try and solve this one! </p>
   <p>UVBIMGWY ZBVOKT BR HOOHXA UVBDG OKGJV ZBVOK IT RJLKOJCL IHXA - UHPM GVFBY</p>

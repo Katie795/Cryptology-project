@@ -10,7 +10,7 @@
 function CheckC() {
 var x = document.forms['AnsC']['CaesAns'].value;
 
-if (x == 'I will wait for you at the bridge') {
+if (x == 'Any salad is a caesar salad if you stab it enough - Pinterest') {
   alert('Well done! You cracked the code!');
 }
 else {
@@ -51,9 +51,7 @@ function Hint() {
 
 
 <div class='container history'>
-  <div class='container-fluid text-center title'>
-  <h1>The Caesar Cipher</h1>
-</div>
+<h1 class="text-center">The Caesar Cipher</h1>
   <h2>History</h2>
   <br><br><p>This is one of the earliest known examples of ciphers in written history,
   appearing in Julius Caesars’ Gallic Wars, where a war is won by with the
@@ -61,14 +59,14 @@ function Hint() {
    In fact, Julius Caesar was a big fan of Ciphers, according to Suetonius’ Lives of the Caesars’s.</p>
 </div>
 
-<div class="explanation">
+<div class="container explanation">
   <h2>How it works</h2>
-  <p>This Cipher is created by shifting the letters of the alphabet a number of terms to the left.
-For instance, you could shift the alphabet 7 terms to the right, check out this table! </p>
+  <p>This Cipher is created by shifting the letters of the alphabet a number of terms, to create a new corresponding
+    alphabetFor instance, you could shift the alphabet 7 terms to the right, as you can see below! </p>
 
 
 
-<div class='container center'>
+<div class='center'>
 
   <table class='table text-center table-bordered table-condensed'>
     <tr>
@@ -129,17 +127,20 @@ For instance, you could shift the alphabet 7 terms to the right, check out this 
     </tr>
   </table>
 </div>
+Here the letter A would be written as H, B as I, and so on. So HELLO would be written as OLSSU. You get the gist.
 </div>
 <div class='container solving'>
   <h2>How to solve</h2>
-  <p>However, as you can see, there are 24 other possible combinations to choose from, so it is not a
-  very secure form of coding, as the solution can often be found by simply trying all the possible combinations!
+  <p>However, this is still not a very secure code! There are only 25 other possible combinations to choose from,so the solution can often be found by simply trying all the possible combinations! A good
+  starting point if you are trying to crack this is to look for single letter words, as in English these can only be a or i. That's you narrowed down your
+  cipher from 25 to 2! Try one, and if it doesn't make any sense, then try the next one. If they both don't work, then it
+  may be a different kind of cipher, or it may not be in English!
 </p>
 </div>
 
 <div class='container puzzle jumbotron'>
   <h2>Let's see if you can solve this one!</h2><br><br><br>
-    <p>V JVYY JNVG SBE LBH NG GUR OEVQTR</p>
+    <p>REP JRCRU ZJ R TRVJRI JRCRU ZW PFL JKRS ZK VEFLXY - GZEKVIVJ</p>
     <form name='AnsC' onsubmit='return CheckC()'>
       <div class="col-lg-6">
         <div class="input-group">
@@ -154,7 +155,7 @@ For instance, you could shift the alphabet 7 terms to the right, check out this 
 </div>
 
 
-<!-- I will wait for you at the bridge -->
+<!-- Any salad is a caesar salad if you stab it enough - Pinterest -->
 <div class='container'>
 <nav aria-label="Page navigation">
   <ul class="pager">
