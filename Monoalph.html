@@ -20,6 +20,11 @@
   function Hint() {
     alert('Hint')
   }
+
+  function Hide() {
+      (".hideme").hide();
+    }
+
   </script>
 </head>
 <body>
@@ -136,24 +141,34 @@ Al Kindi found that in Arabic, the letters a and l appear more often that the ot
     </thead>
 </div>
 </div>
+
 <div class="container puzzle jumbotron">
   <p> Try and solve this one! </p>
   <p>UVBIMGWY ZBVOKT BR HOOHXA UVBDG OKGJV ZBVOK IT RJLKOJCL IHXA - UHPM GVFBY</p>
-
-
   <form name='AnsC' onsubmit='return CheckC()'>
    <div class="col-lg-6">
-   <div class='input-group'>
-    <input type='text' class='form-control' name="MonoAns">
-    <span class="input-group-btn">
-      <button class="btn btn-default" type="submit" value='Submit'>Submit!</button>
-    </span>
-  </div>
-</div>
-<button onclick='Hint()' class='btn btn-primary'>Hint</button>
+     <div class='input-group'>
+      <input type='text' class='form-control' name="MonoAns">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit" value='Submit'>Submit!</button>
+      </span>
+     </div>
+   </div>
+     <button onclick='Hint()' class='btn btn-primary'>Hint</button>
   </form>
 </div>
 <!-- Answer: Problems worthy of attack prove their worth by fighting back- Paul Erdos -->
+
+
+
+<div>
+  <button onclick="Hide()" class="Buttonid"> Button </button>
+  <p class="hideme"> text to disappear </p>
+
+</div>
+
+
+
 
 <div class='container'>
 <nav aria-label="Page navigation">
