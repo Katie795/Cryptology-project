@@ -22,10 +22,11 @@
     alert('Hint')
   }
 
-  $("#Vbtn").click(function(){
-    $(".toggle").slideToggle();
-});
-
+  $(document).ready(function(){
+      $("Vbtn").click(function(){
+          $("Vtext").toggle();
+      });
+  });
 
   </script>
 
@@ -1005,7 +1006,7 @@ the website!<br><br> Good luck...<br><br>
 </div>
 
 <div class='container limit'>
-  <div class="toggle show-answer">
+  <div id="Vtext" class="toggle show-answer">
   <div class="container puzzle jumbotron">
     <button type="button" class="btn btn-success" id="Vbtn">The Viginere Challenge</button>
       <div class="answer">
