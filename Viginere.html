@@ -22,12 +22,10 @@
     alert('Hint')
   }
 
-  function classToggle() {
-    this.classList.toggle('show-answer');
-    this.classList.toggle('hide-answer');
-  }
+  $("#Vbtn").click(function(){
+    $(".toggle").slideToggle();
+});
 
-  document.getClass('#Vbtn').addEventListener('click', classToggle);
 
   </script>
 
