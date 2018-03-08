@@ -21,9 +21,11 @@
     alert('Hint')
   }
 
-  function Hide() {
-      (".hideme").hide();
-    }
+  function Hide(someElement) {
+    console.log("hello am i here");
+    consolo.log("what is my element", someElement);
+    someElement.hide();
+  }
 
   </script>
 </head>
@@ -162,7 +164,7 @@ Al Kindi found that in Arabic, the letters a and l appear more often that the ot
 
 
 <div>
-  <button onclick="hide('.hideme')"> Button </button>
+  <button onclick=Hide(.hideme)> Button </button>
   <p class="hideme"> text to disappear </p>
 
 </div>
