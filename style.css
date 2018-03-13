@@ -24,14 +24,10 @@ h1 {
   border-color: black;
 }
 
-.answer {
-  opacity: 0;
+.class1 {
+  color: red;
 }
 
-.show-answer .answer {
-  opacity: 1;
-}
-
-.hide-answer .puzzle {
-  height: 25px
+.class2 {
+  color: blue
 }
