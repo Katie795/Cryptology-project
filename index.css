@@ -8,4 +8,9 @@ h1 {
 
 p {
   font-size: 110%;
+  padding: 20px;
+}
+
+body {
+  background-image: url("./grey/grey.png")
 }
