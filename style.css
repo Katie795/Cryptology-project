@@ -31,3 +31,13 @@ h1 {
 .class2 {
   color: blue
 }
+
+p {
+  font-size: 110%;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 200%;
+  padding: 20px;
+}
