@@ -52,8 +52,8 @@
 <h1 class='text-center'>The Homophonic substitution Cipher</h1>
 <div class="history">
   <h2>History</h2>
-  <div class="col-lg-6"><p>With the advent of Frequency analysis, the Monoalphabetic Cipher was compromised. An upgrade was desparately needed!
-  The Homophonic cipher was invented to essentially cover up the flaw exposed by frequency analysis. One of the most famous incidences
+  <div class="col-lg-6"><p>With the advent of frequency analysis, the Monoalphabetic Cipher was compromised. An upgrade was desparately needed!
+  The Homophonic cipher was invented to quickly and securely cover up the flaw exposed by frequency analysis. One of the most famous incidences
 of this cipher in history is with King Louis and the Man in the iron Mask, more information on which can be found <a href="https://en.wikipedia.org/wiki/Man_in_the_Iron_Mask">here</a>.</p></div>
 <div class="col-lg-6 text-center">
 <img src='./Images/History4.jpg'></div></div>
@@ -63,8 +63,8 @@ of this cipher in history is with King Louis and the Man in the iron Mask, more 
   <h2>How it works</h2>
   <p>The idea was to represent each letter with more than one substitution, depending on how often the letter appeared
   normally. For example, since the letter e occurs 12% of the time, it would be represented by 12 separate symbols, wheras
-  the letter z would only be represented by 1 symbol. Symbols commonly used are the digits 00-99, with each digit representing 1%.</p>
-<div><p> An example of such key is shown below:<p></div>
+  the letter z would only be represented by 1 symbol, since it only occurs 1% of the time. Symbols commonly used are the digits 00-99, with each digit representing 1%.</p>
+<div><p> An example of such a key is shown below:<p></div>
 
 <div class='container'>
 
@@ -413,12 +413,12 @@ of this cipher in history is with King Louis and the Man in the iron Mask, more 
   <h2>How to solve</h2>
   <p>The question still remains: How would you go about solving such a cipher? It is definitely a lot harder to crack than
   the Monoalphabetic one, and the process seems daunting. However, though there are a few flaws in this cipher which, when
-  used cleverly and with a bit of luck, means that it can be cracked!</p>
+  used cleverly and with a bit of luck, means that it can be cracked.</p>
   <p>The trick here is to realise that though each letter can be represented by multiple numbers, each number corresponds to only
-  one letter! Yay! So where can we go with this handhold?</p>
+  one letter. Yay! So where can we go with this handhold?</p>
   <p>Now we can look for pairs on letters that appear frequently. From this we can guess what these numbers represent, and use our guesses
     to slowly build up a picture of the ciphertext. To get you started, the most common 2 and 3 letter combinations in English are
-    "th", "in", "he", "er" and "the", "ing" and "and".</p>
+    "th", "in", "he", "er" and "the", "ing" and "and". Essentially this is an extension of frequency analysis but requires a bit more persistance and thought.</p>
 </div>
 <div class='container puzzle jumbotron'>
   <h2 class='text-center'>Try and solve this one!</h2><br><br>
